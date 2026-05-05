@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mohammed Kaif — Data Engineer specialising in lakehouse architectures and cloud-native pipelines." />
+  <title>Mohammed Kaif — Data Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <nav id="nav" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo">MK<span>.</span></a>
+
+    <ul class="nav-links">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          aria-label="Toggle light / dark mode"
+          title="Toggle theme"
+        >
+          <span class="theme-toggle-thumb">🌙</span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <div id="hero">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="hero-glow"  aria-hidden="true"></div>
+    <div class="hero-glow2" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag">Data Engineer · Bengaluru, India</div>
+
+      <h1 class="hero-name">
+        Mohammed<br>
+        <span class="line2">Kaif</span>
+      </h1>
+
+      <p class="hero-desc">
+        Building data lakehouse architectures and cloud-native pipelines
+        that move billions of records — reliably, efficiently, at scale.
+      </p>
+
+      <div class="hero-certs">
+        <div class="cert-badge"><span class="dot" aria-hidden="true"></span>Databricks Certified Data Engineer Professional</div>
+        <div class="cert-badge"><span class="dot" aria-hidden="true"></span>Databricks Data Engineer Associate</div>
+        <div class="cert-badge"><span class="dot" aria-hidden="true"></span>GCP Professional Data Engineer</div>
+      </div>
+
+      <div class="hero-links">
+        <a href="mailto:mdkaifnitt@gmail.com" class="btn-primary">Get in Touch ↗</a>
+        <a href="https://github.com/kaiffeine" target="_blank" rel="noopener noreferrer" class="btn-ghost">GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="scroll-line"></span>
+      Scroll to explore
+    </div>
+  </div>
+
+  <div class="section-divider" role="separator"></div>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience" aria-labelledby="exp-heading">
+    <div class="section-label" aria-hidden="true">Work Experience</div>
+    <h2 id="exp-heading" class="section-title">Where I've<br>Made an Impact</h2>
+
+    <!-- Tredence -->
+    <div class="reveal">
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-period">Aug 2024 – Present</div>
+          <div class="exp-company">Tredence Inc.</div>
+        </div>
+        <div>
+          <div class="exp-role">
+            Analyst — Data Engineer
+            <span>Bengaluru, India</span>
+          </div>
+          <ul class="exp-points">
+            <li>Led end-to-end migration of 100+ data assets (tables, notebooks, workflows, dashboards) from Azure Databricks to GCP Databricks, achieving 20–30% cost optimisation through Unity Catalog enablement and external tables for a multi-billion-dollar retail platform.</li>
+            <li>Drove Unity Catalog migration and lakehouse modernisation — code refactoring, DAG re-engineering, and Parquet-to-Delta conversion to improve governance, ACID compliance, and query performance.</li>
+            <li>Built automation frameworks that reduced migration timelines by 40%, minimised manual effort, and ensured zero/minimal disruption to business-critical analytics workloads.</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tech-tag">Databricks</span>
+            <span class="tech-tag">Unity Catalog</span>
+            <span class="tech-tag">GCP</span>
+            <span class="tech-tag">Azure</span>
+            <span class="tech-tag">Delta Lake</span>
+            <span class="tech-tag">PySpark</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">Apache Airflow</span>
+            <span class="tech-tag">Parquet</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- IIT Bombay -->
+    <div class="reveal">
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-period">May 2023 – Jul 2023</div>
+          <div class="exp-company">IIT Bombay</div>
+        </div>
+        <div>
+          <div class="exp-role">
+            ML Research Intern
+            <span>Advisor: Dr. Tom V. Mathew · Mumbai</span>
+          </div>
+          <ul class="exp-points">
+            <li>Classified driver behaviour (aggressive, normal, cautious) using K-Means clustering on VBox manoeuvre data — acceleration, velocity, steering angle, and GPS signals.</li>
+            <li>Compared StandardScaler vs MinMaxScaler preprocessing, applying t-SNE dimensionality reduction (250 iterations, perplexity 30–50) to improve cluster separability.</li>
+            <li>Evaluated clustering quality using Silhouette, Calinski–Harabasz, and Davies–Bouldin scores — identified StandardScaler as producing more distinct, meaningful clusters.</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tech-tag">K-Means</span>
+            <span class="tech-tag">t-SNE</span>
+            <span class="tech-tag">scikit-learn</span>
+            <span class="tech-tag">Python</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- IIT Madras -->
+    <div class="reveal">
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-period">May 2022 – Aug 2022</div>
+          <div class="exp-company">IIT Madras</div>
+        </div>
+        <div>
+          <div class="exp-role">
+            Research Intern — PINNs
+            <span>Advisor: Dr. C Annavarapu · Chennai</span>
+          </div>
+          <ul class="exp-points">
+            <li>Implemented Monte Carlo Integration within a Physics-Informed Neural Networks (PINNs) framework to infer solutions for linear and quadratic PDEs.</li>
+            <li>Conducted comparative evaluation against Trapezoidal and Simpson's rules, analysing computation time and numerical error to assess scalability and accuracy trade-offs.</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tech-tag">PINNs</span>
+            <span class="tech-tag">Monte Carlo</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Neural Networks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider" role="separator"></div>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" aria-labelledby="proj-heading">
+    <div class="section-label" aria-hidden="true">Projects</div>
+    <h2 id="proj-heading" class="section-title">Things I've<br>Built</h2>
+
+    <div class="projects-grid reveal">
+
+      <div class="project-card">
+        <div class="project-num">01</div>
+        <div class="project-arrow" aria-hidden="true">↗</div>
+        <div class="project-title">SQL Query Generator</div>
+        <p class="project-desc">LLM-powered natural language to SQL converter using LangChain and Gemini API. Enables non-technical users to query structured datasets via plain English prompts — no SQL knowledge required.</p>
+        <div class="project-tags">
+          <span class="project-tag">LangChain</span>
+          <span class="project-tag">Gemini API</span>
+          <span class="project-tag">NL2SQL</span>
+          <span class="project-tag">Python</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-num">02</div>
+        <div class="project-arrow" aria-hidden="true">↗</div>
+        <div class="project-title">Integration &amp; Commuter Satisfaction Analysis</div>
+        <p class="project-desc">Applied Decision Tree, Random Forest, and XGBoost on commuter survey and operational data to predict service quality. Designed a Sustainability Integration Index to quantify multimodal transport connectivity.</p>
+        <div class="project-tags">
+          <span class="project-tag">XGBoost</span>
+          <span class="project-tag">Random Forest</span>
+          <span class="project-tag">Decision Tree</span>
+          <span class="project-tag">ML</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-num">03</div>
+        <div class="project-arrow" aria-hidden="true">↗</div>
+        <div class="project-title">Parkinson's Disease Detector</div>
+        <p class="project-desc">ML model using Support Vector Machine (SVM) to detect Parkinson's Disease. Classifies individuals into affected and unaffected groups using biomedical voice measurements, achieving 88% accuracy.</p>
+        <div class="project-tags">
+          <span class="project-tag">SVM</span>
+          <span class="project-tag">scikit-learn</span>
+          <span class="project-tag">Classification</span>
+          <span class="project-tag">Python</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider" role="separator"></div>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" aria-labelledby="skills-heading">
+    <div class="section-label" aria-hidden="true">Technical Skills</div>
+    <h2 id="skills-heading" class="section-title">Tools of the<br>Trade</h2>
+
+    <div class="skills-grid reveal">
+
+      <div class="skill-group">
+        <div class="skill-group-label">Languages</div>
+        <div class="skill-list">
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">PySpark</span>
+          <span class="skill-pill">SQL</span>
+          <span class="skill-pill">C++</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-label">Cloud &amp; Data Platforms</div>
+        <div class="skill-list">
+          <span class="skill-pill">GCP</span>
+          <span class="skill-pill">Azure Databricks</span>
+          <span class="skill-pill">Delta Lake</span>
+          <span class="skill-pill">Unity Catalog</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-label">Data Engineering</div>
+        <div class="skill-list">
+          <span class="skill-pill">Apache Airflow</span>
+          <span class="skill-pill">Parquet</span>
+          <span class="skill-pill">Databricks</span>
+          <span class="skill-pill">Lakehouse</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-label">Business Intelligence</div>
+        <div class="skill-list">
+          <span class="skill-pill">Power BI</span>
+          <span class="skill-pill">Tableau</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-label">Machine Learning</div>
+        <div class="skill-list">
+          <span class="skill-pill">scikit-learn</span>
+          <span class="skill-pill">XGBoost</span>
+          <span class="skill-pill">K-Means</span>
+          <span class="skill-pill">SVM</span>
+          <span class="skill-pill">PINNs</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-label">Dev Tools</div>
+        <div class="skill-list">
+          <span class="skill-pill">Git / GitHub</span>
+          <span class="skill-pill">VS Code</span>
+          <span class="skill-pill">Jupyter</span>
+          <span class="skill-pill">MS Office</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider" role="separator"></div>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section id="education" aria-labelledby="edu-heading">
+    <div class="section-label" aria-hidden="true">Education</div>
+    <h2 id="edu-heading" class="section-title">Academic<br>Foundation</h2>
+
+    <div class="reveal">
+      <div class="edu-card">
+        <div>
+          <div class="edu-institution">NIT Tiruchirappalli</div>
+          <div class="edu-degree">B.Tech in Civil Engineering · Minor in Computer Science &amp; Engineering</div>
+          <div class="edu-period">2020 – 2024</div>
+        </div>
+        <div class="edu-cgpa">
+          <div class="cgpa-num">8.64</div>
+          <div class="cgpa-label">CGPA / 10</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider" role="separator"></div>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="contact-grid reveal">
+      <div>
+        <div class="section-label" aria-hidden="true">Contact</div>
+        <h2 id="contact-heading" class="contact-headline">
+          Let's build<br>something<br><span class="accent">great.</span>
+        </h2>
+        <p class="contact-sub">Open to interesting data engineering opportunities, collaboration on ML projects, or just a good conversation about distributed systems and lakehouses.</p>
+      </div>
+
+      <div class="contact-links">
+        <a href="mailto:mdkaifnitt@gmail.com" class="contact-link">
+          <div class="contact-link-left">
+            <span class="contact-link-label">Email</span>
+            <span class="contact-link-value">mdkaifnitt@gmail.com</span>
+          </div>
+          <span class="contact-link-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/mohammed-kaif-49a15b121/" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <div class="contact-link-left">
+            <span class="contact-link-label">LinkedIn</span>
+            <span class="contact-link-value">Mohammed Kaif</span>
+          </div>
+          <span class="contact-link-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="https://github.com/kaiffeine" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <div class="contact-link-left">
+            <span class="contact-link-label">GitHub</span>
+            <span class="contact-link-value">Mohammed Kaif</span>
+          </div>
+          <span class="contact-link-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="tel:+919087814754" class="contact-link">
+          <div class="contact-link-left">
+            <span class="contact-link-label">Phone</span>
+            <span class="contact-link-value">+91 90878 14754</span>
+          </div>
+          <span class="contact-link-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <span>© 2026 Mohammed Kaif</span>
+    <div class="footer-dot" aria-hidden="true"></div>
+    <span>Bengaluru, India</span>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
